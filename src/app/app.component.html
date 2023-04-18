@@ -7,20 +7,23 @@
   <hr/>
   <div class="row">
     <div class="col s6 m3 l3" *ngFor="let pokemon of pokemonList">
-      <div class="card">
+      <div class="card horizontal" pkmBorderCard = "">
         <div class="card-image">
           <img [src]="pokemon.picture" alt="{{pokemon.name}}">
-          <span class="card-title grey-text text text-darken-1"><strong>{{pokemon.name}}</strong></span>
         </div>
-        <div class="card-content">
-          <p>
-            <b>HP : </b> {{pokemon.hp}} <br>
-            <b>CP : </b> {{pokemon.cp}} <br>
-          </p>
+        <div class="card-stacked">
+          <div class="card-content">
+            <span class="card-title grey-text text text-darken-1"><strong>{{pokemon.name}}</strong></span>
+            <p>
+              <b>HP : </b> {{pokemon.hp}} <br>
+              <b>CP : </b> {{pokemon.cp}}
+            </p>
+          </div>
+          <div class="card-action">
+            <small>{{pokemon.created | date:"dd/MM/yyyy"}}</small>
+          </div>
         </div>
-        <div class="card-action">
-          <small>{{pokemon.created}}</small>
-        </div>
+
       </div>
     </div>
   </div>
