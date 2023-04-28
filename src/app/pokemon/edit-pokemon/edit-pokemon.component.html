@@ -1,0 +1,7 @@
+<div *ngIf="pokemon" class="center">
+  <h3>Editer {{ pokemon.name }}</h3>
+  <img [src]="pokemon.picture" alt="pokemon image">
+</div>
+<app-pokemon-form *ngIf="pokemon" [pokemon]="pokemon"></app-pokemon-form>
+
+<h3 *ngIf="!pokemon" class="center">Aucun pokémon à éditer...</h3>

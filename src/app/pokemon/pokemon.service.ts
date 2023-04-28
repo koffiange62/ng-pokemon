@@ -15,7 +15,7 @@ export class PokemonService {
 
   getPokemonTypeList(){
     return [
-      "plante", "Feu", "Eau",
+      "Plante", "Feu", "Eau",
       "Insecte", "Normal", "Electrik",
       "Poison", "Fée", "Vol",
       "Combat", "Psy"
