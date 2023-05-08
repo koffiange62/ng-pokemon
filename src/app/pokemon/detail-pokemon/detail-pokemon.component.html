@@ -37,11 +37,15 @@
         <div class="card-action">
           <a (click)="goToPokemonList()">Retour</a>
           <a (click)="goToPokemonEdit()">Éditer</a>
+          <a (click)="goToPokemonDelete()">Supprimer</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
 <div *ngIf='!pokemon' class="center">
   <h4>Aucun pokémon à afficher !</h4>
   <a routerLink="/pokemons" class="waves-effect waves-teal btn-flat">
